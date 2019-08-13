@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Atividade 3</title>
+</head>
+<body>
+    <h1>Pesquisa</h1>
+    <p>Nos ajude a melhorar nossos serviços</p>
+  
+    
+    <form name="form_pesquisa" action="resultado.html" method="POST">
+            <label for="nome">Nome:<br>
+            </label> <input name="nome" id="nome" required maxlength="30" placeholder="Insira seu Nome"> <br>
+            <label for="email">Email:<br>
+            </label>  <input name="email" id="email" required type="email" placeholder="Insira seu Email"> <br>
+            <label for="idade">Idade:<br>
+            </label> <input name="idade" id="idade" required type="number" placeholder="Idade"><br>
+            Como você define sua ocupação atualmente?<br>
+            <select name="Ocupaçao">
+                    <option>Estudante</option>
+                    <option>Desempregado</option>
+                    <option>Trabalhador</option>
+                </select><br>
+            Você recomendaria nossos serviços para um amigo??<br>
+            <ul>
+                <li><input type="radio" name="claro">Claro</li>
+                <li><input type="radio" name="Talvez">Talvez</li>
+                <li><input type="radio" name="Não">Não</li>
+            </ul>
+            O que você mais gosta de nossos serviços:<br>
+            <select name="serviços">
+                <option>Selecione uma opção</option>
+            </select><br>
+            Habilidades que você quer melhorar<br>
+            (Marque todas se aplicável):<br>
+            <ul>
+                    <li><input type="radio" name="front">Front-end</li>
+                    <li><input type="radio" name="back">Back-end</li>
+                    <li><input type="radio" name="data">Data Visualization</li>
+                    <li><input type="radio" name="challenges">Challenges</li>
+                    <li><input type="radio" name="open">Open Source</li>
+                    <li><input type="radio" name="git">Git</li>
+                    <li><input type="radio" name="Videos">Videos</li>
+                    <li><input type="radio" name="City">City Meetups</li>
+                    <li><input type="radio" name="Wiki">Wiki</li>
+                    <li><input type="radio" name="forum">Forum</li>
+                    <li><input type="radio" name="cursos">Cursos Adicionais</li>
+            </ul><br>
+            Comentários ou Sugestões?<br>
+            <textarea  name="comentarios" id="coment"
+maxlength="300" minlength="10" placeholder="Insira aqui seu comentário..."></textarea>
+<input type="submit" value="Enviar">            
+        </form>
+
+</body>
+</html>
